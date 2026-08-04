@@ -1,0 +1,201 @@
+.payment-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.main-heading {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.payment-paragraph {
+  color: #444748;
+}
+
+.payment-methods-row {
+  width: 90%;
+  margin: auto;
+}
+
+.payment-method-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  background: #ffff;
+  padding: 25px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+.payment-method-card-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.payment-methods-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.payment-card-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.payment-card-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.payment-card-item-price {
+  color: #0041c9;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.payment-card-item-title {
+  color: #000;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.payment-card-item-text {
+  color: #444748;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.payment-card-item-price {
+  color: #0041c9;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.payment-items {
+  background: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+}
+
+.payment-items-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.payment-card-item-button {
+  background-color: #0041c9;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.payment-card-price-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.payment-card-price-body .payment-card-item-price {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.payment-method-card.active {
+  transform: scale(1.03);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .payment-card-item {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .payment-method-card img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .main-heading {
+    font-size: 24px;
+  }
+
+  .payment-methods-title {
+    font-size: 18px;
+  }
+
+  .payment-method-card-title {
+    font-size: 15px;
+  }
+
+  .payment-card-item-title {
+    font-size: 16px;
+  }
+
+  .payment-method-card {
+    padding: 18px;
+  }
+
+  .payment-items {
+    padding: 16px;
+  }
+
+  .payment-card-item {
+    flex-direction: column;
+  }
+
+  .payment-card-item-button-text {
+    font-size: 14px;
+  }
+  .payment-card-price-body .payment-card-item-price {
+    font-size: 18px;
+  }
+}

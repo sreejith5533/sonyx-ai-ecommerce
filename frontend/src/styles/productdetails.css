@@ -1,0 +1,130 @@
+.viewproduct-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.productdetail-add-btn {
+  width: 100%;
+  padding: 5px 10px;
+  background-color: #0041c9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.productdetail-add-btn:hover {
+  background-color: #003fd6;
+}
+
+.view-product-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.product-price-counter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.product-details-div {
+  padding: 40px;
+}
+
+.view-product-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewproduct-carousel {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.viewproduct-img-div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.viewproduct-img-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.prev-icon,
+.next-icon {
+  color: #000;
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .product-details-div {
+    padding: 32px;
+  }
+
+  .view-product-title {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .product-details-div {
+    padding: 24px;
+  }
+
+  .view-product-title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .product-details-div {
+    padding: 20px;
+  }
+
+  .view-product-title {
+    font-size: 18px;
+  }
+
+  .product-description {
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+}

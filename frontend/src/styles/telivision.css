@@ -1,0 +1,495 @@
+.tv-category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.feature {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature i {
+  font-size: 1.5rem;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+.tv-category-heading h2 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.tv-category-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.category-description {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  max-width: 550px;
+  width: 100%;
+  color: #444748;
+
+  margin: auto;
+}
+
+.price-range {
+  accent-color: navy;
+}
+
+.specifications {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.price-range-title,
+.screen-size-title,
+.resolution-title,
+.refresh-rate-title {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.screen-size-overlay {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.screen-type-overlay {
+  font-size: 18px;
+  color: #f9f9f9;
+  font-weight: 600;
+}
+
+.resolution-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hr-line {
+  margin: 10px 0;
+}
+
+.price-range {
+  width: 100%;
+}
+
+.price-range-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.price-range-value {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.size-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.size-div button {
+  flex: 1;
+  min-width: 100px;
+}
+
+.size-btn {
+  border: 0.4px solid #c4c7c7;
+  background-color: #fff;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.size-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.size-btn.active {
+  border: 0.4px solid #0041c9;
+  background-color: #0041c9;
+  color: #fff;
+  font-weight: 500;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.resolution-btn label {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.resolution-btn input {
+  accent-color: #0041c9;
+}
+
+.refresh-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Inter", sans-serif;
+}
+
+.refresh-div label {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.apply-filters-btn {
+  background-color: #0041c9;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.apply-filters-btn:hover {
+  background-color: #0037ad;
+  color: #fff;
+}
+
+.products-title-tv {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.products-div-tv {
+  padding: 20px;
+}
+
+.tv-card-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.specs-div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.specs {
+  color: #444748;
+  background: #d3d4d4;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.tv-card-text {
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 14.5px;
+  font-weight: 400;
+  margin-bottom: 0;
+  flex: 1;
+  margin: 10px 0;
+}
+
+.tv-card-price {
+  font-family: "Space Grotesk", sans-serif;
+  color: #0041c9;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.card-img-div {
+  position: relative;
+  overflow: hidden;
+}
+
+.add-to-cart-btn {
+  background-color: #0041c9;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 90%;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 130%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 200;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0037ad;
+  color: #fff;
+}
+
+.tv-card-img {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.tv-card:hover:hover .tv-card-img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.tv-card:hover .add-to-cart-btn {
+  transform: translate(-50%, 0);
+}
+
+.new-arrival {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  background-color: #c90000;
+  color: #fff;
+  z-index: 2;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.television-img-div {
+  position: relative;
+  overflow: hidden;
+}
+
+.television-card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.image-overlay-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100px;
+  background: rgba(10, 10, 10, 0.6);
+  z-index: 100;
+  text-align: center;
+}
+
+.resolution-overlay-text {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.resolution-overlay-name {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.operating-system {
+  color: #fff;
+}
+
+.refresh-rate-name {
+  color: #fff;
+  font-size: 16px;
+}
+
+.apply-filters-btn-div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.apply-filters-btn-div button {
+  flex: 1;
+}
+
+.clear-filters-btn {
+  background-color: #c90000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+
+.clear-filters-btn:hover {
+  background-color: #ad0000;
+  color: #fff;
+}
+
+.refresh-rate-text {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.refresh-rate-div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.refresh-rate-div button {
+  flex: 1;
+}
+
+.view-details-btn {
+  background-color: #374151;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 14px;
+  width: 100%;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.view-details-btn:hover {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+
+
+.wish-btn{
+  position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    outline: none;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wishlist-btn i {
+    color: #5e0000;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.wishlist-btn:hover i {
+    color: #ff3b5c;
+}
+
+.tv-card:hover .wish-btn{
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+
+
+@media(min-width:320px) and (max-width:480px){
+  .tv-category-heading h2{
+    font-size: 24px;
+  }
+
+  .products-title-tv{
+    font-size: 24px;
+  }
+
+  .products-heading{
+    margin-bottom: 20px;
+  }
+}

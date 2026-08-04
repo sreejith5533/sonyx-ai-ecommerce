@@ -1,0 +1,378 @@
+.ecosystem-section {
+  padding: 40px 20px;
+  background: #ffffff;
+}
+
+.ecosystem-heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.eco-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.eco-description {
+  font-family: "Inter", sans-serif;
+  color: #858383;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.categories-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  text-decoration: none;
+}
+
+.categories-link span {
+  text-decoration: underline;
+}
+
+.categories-link i {
+  text-decoration: none;
+}
+
+.gaming-category-card {
+  width: 100%;
+  height: 288px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.gaming-category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.shop-btn-div {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 8px;
+  padding: 10px 20px;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+.gaming-category-card-large {
+  position: relative;
+  width: 100%;
+}
+.controller-div {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.controller-description,
+.audio-description,
+.monitor-description,
+.consoles-description {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0;
+}
+
+.controller-title,
+.audio-title,
+.monitor-title,
+.consoles-title {
+  color: #ffffff;
+  font-size: 32px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.gaming-category-card-small {
+  position: relative;
+  width: 100%;
+  height: 288px;
+}
+
+.audio-div,
+.monitor-div,
+.consoles-div {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.technical-excellance-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.technical-excellance-descriptio {
+  font-family: "Inter", sans-serif;
+  color: #858383;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.excellence-card {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.excellence-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.technical-excellance-section {
+  padding: 40px 20px;
+}
+
+.excellence-card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.excellence-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.excellence-card-button {
+  width: 100%;
+  background-color: #eaeaea;
+  color: #000;
+  border: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.excellence-card-button:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.excellence-card-image-container {
+  overflow: hidden;
+}
+
+.excellence-card:hover .excellence-card-button {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+.edition-card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.limited-edition-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.limited-edition-description {
+  font-family: "Inter", sans-serif;
+  color: #858383;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.limited-edition-section {
+  padding: 40px 20px;
+}
+
+.edition-card-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.edition-card-description {
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.edition-card-image-container {
+  overflow: hidden;
+  position: relative;
+  border-radius: 12px;
+}
+
+.edition-card-availability {
+  padding: 5px 10px;
+  background: #eaeaea;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 0;
+  position: absolute;
+  top: 10px;
+  font-weight: 600;
+  left: 10px;
+  z-index: 1;
+}
+
+.edition-card:hover .edition-card-image-container img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.apply-filter-btn-div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.category-filter-title,
+.gaming-connectivity-title,
+.gaming-brand-title {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.category-filter-checkbox label,
+.gaming-connectivity-checkbox label,
+.gaming-brand-checkbox-container label {
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.gaming-connectivity-checkbox,
+.category-filter-checkbox,
+.gaming-brand-checkbox-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.gaming-specification-div {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.gaming-row {
+  padding: 40px 20px;
+}
+
+.gamingcard-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.gamingcard {
+  height: 100%;
+}
+
+.gamingcard-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.gaming-products-section {
+  width: 100%;
+}
+
+
+.gamingcard-description {
+  flex: 1;
+  font-family: "Inter", sans-serif;
+  color: #858383;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.gamingcard-title {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.gamingcard:hover .wish-btn {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+
+@media(min-width:481px) and (max-width:768px){
+  .eco-title, .technical-excellance-title, .limited-edition-title{
+    font-size: 32px;
+  }
+
+  .consoles-title{
+    font-size: 28px;
+  }
+
+}
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .eco-title {
+    font-size: 24px;
+  }
+
+  .consoles-title,
+  .monitor-title,
+  .audio-title,
+  .controller-title {
+    font-size: 24px;
+  }
+
+  .technical-excellance-title, .limited-edition-title{
+    font-size: 24px;
+  }
+
+}

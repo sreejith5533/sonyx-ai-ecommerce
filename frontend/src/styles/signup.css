@@ -1,0 +1,89 @@
+.signup-heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+
+.already-account a{
+  color: #0041C9;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+
+.signup-title{
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+
+.signup-container{
+  padding: 40px 20px;
+}
+
+
+.innovation-paragraph-info{
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+
+.signup-subheading{
+  color: #0041C9;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.signup-form-div{
+  margin-top: 20px;
+  padding: 15px;
+  background: #eeeeee;
+}
+
+
+.sign-up-button{
+  background-color: #0041C9;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+
+.signup-form-div label{
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+
+.policy-paragraph{
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: 10px;
+}

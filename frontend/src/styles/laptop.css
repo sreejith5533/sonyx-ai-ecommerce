@@ -1,0 +1,231 @@
+.lap-specs{
+  list-style-type: disc;
+
+}
+
+.lap-specs li {
+  color: #444748;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+
+
+.laptop-price {
+  color: #0041c9;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.laptop-title {
+  color: #000;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.buttons-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cart-btn {
+  background-color: #0041c9;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.details-btn {
+  background-color: #c7c7c7;
+  color: #000;
+  font-weight: 500;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 14px;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.cart-btn:hover {
+  background-color: #0037ad;
+  color: #fff;
+}
+
+.details-btn:hover {
+  background-color: #e1e1e1;
+  color: #000;
+}
+
+.laptop-card {
+  height: 100%;
+}
+
+.laptop-card-img-div {
+  position: relative;
+}
+
+.laptop-card-img {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.wish-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: #000;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Space Grotesk", sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+.laptop-card:hover .wish-btn {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+
+.wish-btn i{
+  color: #fff;
+  font-size: 18px;
+
+}
+
+.filter-title {
+  color: #1a1c1c;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 0;
+}
+
+.filter-title i {
+  color: #444748;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.ram-title,
+.processor-title,
+.graphics-title,
+.brand-filter-title,
+.storage-title {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 15.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.brand-choice-item,
+.processor-choice-div,
+.graphics-choice-div,
+.ram-choice-div,
+.storage-choice-item {
+  display: flex;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 14.5px;
+  font-weight: 400;
+  margin-bottom: 0;
+  gap: 10px;
+}
+.ram-choice-div input,
+.processor-choice-div input,
+.graphics-choice-div input,
+.brand-choice-item input ,
+.storage-choice-item input {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  accent-color: #0041c9;
+  color: #fff;
+
+}
+
+.laptop-products-title{
+  font-family: "Space Grotesk", sans-serif;
+  color: #1a1c1c;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.laptop-row {
+  padding: 40px 20px;
+}
+
+.laptop-card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.laptop-specs-div {
+  padding-left: 15px;
+  flex: 1;
+}
+
+.filter-container {
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+
+
+
+@media (min-width:320px) and (max-width:480px){
+  .details-btn , .cart-btn{
+    font-size: 11px;
+  }
+
+
+  .laptop-products-title{
+    font-size: 24px;
+  }
+
+
+}

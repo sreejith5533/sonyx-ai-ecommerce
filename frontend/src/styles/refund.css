@@ -1,0 +1,197 @@
+.refund-card {
+  padding: 20px;
+  height: 100%;
+  background: #ffffff;
+  border: none !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.refund-policy-heading-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.refund-policy-number {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #cfcfcc;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0;
+}
+
+.refund-policy-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 0;
+}
+
+.refund-policy-paragraph {
+  color: #444748;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin: 10px 0;
+}
+
+.refund-policy-list-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.refund-policy-list-item i {
+  color: #0041c9;
+  font-size: 16px;
+}
+
+.refund-policy-list {
+  margin-top: 15px;
+}
+
+.refund-policy-list-item p {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.refund-policy-list-div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.refund-section-div {
+  width: 95%;
+  margin: auto;
+}
+
+.refund-heading-div {
+  padding: 40px 0;
+}
+
+.refund-subheading {
+  color: #0041c9;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0;
+}
+
+.refund-heading {
+  color: #000;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 0;
+}
+
+.refund-paragraph {
+  color: #444748;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.contact-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.contact-div a {
+  color: #0041c9;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+.mail-contact,
+.phone-contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.tech-card {
+  padding: 20px;
+  height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+}
+
+.tech-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 0;
+}
+
+.tech-paragraph {
+  color: #444748;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .refund-heading {
+    font-size: 28px;
+  }
+
+  .refund-policy-title {
+    font-size: 22px;
+  }
+
+  .tech-title{
+    font-size: 22px;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .contact-div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .refund-heading {
+    font-size: 24px;
+  }
+
+  .refund-policy-title {
+    font-size: 20px;
+  }
+
+  .tech-title {
+    font-size: 20px;
+  }
+}

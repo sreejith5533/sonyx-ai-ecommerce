@@ -1,0 +1,317 @@
+.accessories-filter-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #1a1c1c;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.accessories-filter-descriptio {
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 12px;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.category-title,
+.brand-title,
+.accessories-connectivity-filter-title,
+.accessories-features-title,
+.accessories-color-filter-title {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.accessories-category-item,
+.accessories-features-checkbox-container,
+.accessories-color-checkbox,
+.accessories-connectivity-checkbox,
+.brand-choice-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.accessories-category-item input,
+.brand-choice-div input,
+.accessories-connectivity-checkbox input,
+.accessories-features-checkbox-container input,
+.accessories-color-checkbox input {
+  height: 18px;
+  width: 18px;
+  accent-color: #0041c9;
+}
+
+.accessories-filter {
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.apply-filter-btn {
+  background-color: #0041c9;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.apply-filter-btn:hover {
+  background-color: #0037ad;
+  color: #fff;
+}
+
+.products-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.products-heading-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+}
+
+.price-name-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accessories-product-name {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.specs-name {
+  color: #0041c9;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  font-family: "Inter", sans-serif;
+}
+
+.specs-model {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
+  padding: 4px 8px;
+  font-weight: 500;
+  border-radius: 4px;
+  background-color: #ececec;
+  font-family: "Inter", sans-serif;
+}
+
+.specs-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.accessories-product-description {
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 14px;
+  text-align: justify;
+  font-weight: 400;
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.accessories-product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  height: 100%;
+  border: none;
+}
+
+.accessories-product-card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.accessories-product-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.accessories-container {
+  background: #f9f9f9;
+  border-radius: 12px;
+}
+
+.btn-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.accessories-add-to-cart {
+  background-color: #0041c9;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.view-product {
+  background-color: #c7c7c7;
+  color: #000;
+  font-weight: 500;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.accessories-row {
+  padding: 40px 20px;
+}
+
+.accessories-product-price {
+  color: #0041c9;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+  white-space: nowrap; /* Prevents price from wrapping */
+  flex-shrink: 0;
+}
+
+.accessories-color-filter-description,
+.accessories-connectivity-filter-description,
+.accessories-features-description,
+.brand-description,
+.category-description,
+.accessories-filter-description {
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.accessories-product-card:hover .wish-btn {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+
+@media (min-width:768px) and (max-width: 1024px) {
+  .products-title {
+    font-size: 28px;
+  }
+  .price-name-div{
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+
+  .accessories-add-to-cart{
+    font-size: 12px;
+    padding: 8px;
+    white-space: nowrap;
+  }
+
+  .price-name-div{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .products-title {
+    font-size: 24px;
+  }
+
+  .accessories-row {
+    padding: 10px;
+  }
+
+  .accessories-add-to-cart{
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .products-title {
+    font-size: 24px;
+  }
+
+  .accessories-add-to-cart {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .view-product {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .accessories-row {
+    padding: 10px;
+  }
+}

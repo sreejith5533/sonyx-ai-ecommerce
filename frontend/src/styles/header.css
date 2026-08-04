@@ -1,0 +1,33 @@
+.btns-div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 200px;
+}
+
+.btns-div a{
+  color: #000;
+}
+
+
+.btns-div button{
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.btns-div button i{
+  color: black;
+}
+
+.nav-item .active{
+  color: #000 !important;
+  font-weight: 600;
+}
+
+

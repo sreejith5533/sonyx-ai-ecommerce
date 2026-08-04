@@ -1,0 +1,66 @@
+.tech, .awards{
+  color: #0041C9;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+
+.legacy-title{
+  color: #0041C9;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+
+.legacy-img-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.legacy-img-div img{
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (min-width:481px) and (max-width:1024px) {
+  .legacy-title{
+    font-size: 32px;
+  }
+
+  .legacy-content{
+    padding: 20px;
+  }
+
+  .tech-div, .awards-div{
+    text-align: center;
+  }
+  
+}
+
+
+@media (min-width:320px) and (max-width:480px) {
+  .legacy-title{
+    font-size: 24px;
+  }
+  .tech-div, .awards-div{
+    text-align: center;
+  }
+
+  .legacy-content{
+    padding: 10px;
+  }
+
+  .legacy-paragraph{
+    text-align: justify;
+  }
+}

@@ -1,0 +1,20 @@
+function NewProduct({product}){
+  return(
+    <div className="card new-product">
+      <button className="like-btn">
+        <i className="fa-regular fa-heart"></i>
+      </button>
+      <div className="card-img-top new-product-img-div">
+        <img className="new-product-img" src={`http://127.0.0.1:8000${product.thumbnail}`} alt="img" />
+      </div>
+      <div className="card-body">
+        <h5 className="card-title new-product-title">{product.subcategory.category.name}</h5>
+        <p className="card-text product-category">{product.name}</p>
+        <span className="product-price">&#8377; {product.price}</span>
+      </div>
+    </div>
+  )
+}
+
+
+export default NewProduct;

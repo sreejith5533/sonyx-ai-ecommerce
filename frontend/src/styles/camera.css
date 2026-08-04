@@ -1,0 +1,547 @@
+.camera-container {
+  background: #fcfaf7;
+}
+
+.ecosystem-description {
+  font-family: "Inter", sans-serif;
+  color: #0041c9;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.camera-category-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #1a1c1c;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+
+.categories-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.camera-category-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 1rem 0;
+}
+
+.camera-category-card {
+  flex: 1 1 210px;
+}
+
+.camera-img-container {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.camera-img-container img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.camera-category-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.camera-category-section {
+  padding: 40px 20px;
+}
+
+.camera-category-card-title {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.camera-category-row:nth-child(even) {
+  transform: translateY(20px);
+}
+
+.camera-category-row:nth-child(odd) {
+  transform: translateY(-20px);
+}
+
+.camera-category-card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lens-type-card {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.lens-type-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.lens-type-card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.lens-type-card-button,
+.camera-type-card-button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.lens-type-card-button:hover,
+.camera-type-card-button:hover {
+  background: #fff;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+
+.camera-type-card {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.camera-type-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.camera-type-card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.camera-type-card-column,
+.lens-type-card-column {
+  padding: 0;
+}
+
+.lens-type-card-subtitle,
+.camera-type-card-subtitle {
+  font-family: "Inter", sans-serif;
+  color: #0041c9;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.lens-type-card-title,
+.camera-type-card-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.lens-type-card-description,
+.camera-type-card-description {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.camera-card {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.camera-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.camera-card-container {
+  padding: 15px;
+  height: 100%;
+  border: none;
+  background: #fefefd;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.camera-card-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.camera-add-to-cart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0;
+  visibility: hidden;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.camera-card-container:hover .camera-add-to-cart {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.camera-card-container:hover .camera-card-img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.camera-card-container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.camera-add-to-cart:hover {
+  background: #000;
+  color: #fff;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+
+.camera-price-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.camera-price-filter-title,
+.sensor-filter-title,
+.camera-resolution-title,
+.camera-brand-title {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.specifications-row {
+  padding: 40px 20px;
+}
+
+.camera-resolution-div,
+.video-recording-option,
+.camera-brand-div,
+.camera-price-filter-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 14.5px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.camera-resolution-div input,
+.camera-sensor-filter-option input,
+.camera-price-filter-option input,
+.camera-brand-div input,
+.video-recording-option input {
+  width: 18px;
+  height: 18px;
+  accent-color: black;
+  color: #fff;
+}
+
+.camera-specifications-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #1a1c1c;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.comparision-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #1a1c1c;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.lens-table {
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+  border: 1px solid #ececec;
+}
+
+.lens-table thead th {
+  background: #f3f3f3;
+  color: #222;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 18px;
+  border: none;
+}
+
+.lens-table tbody td {
+  padding: 18px;
+  font-size: 15px;
+  color: #444;
+  border-color: #f1f1f1;
+  vertical-align: middle;
+}
+
+.lens-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.lens-table tbody td:last-child {
+  font-weight: 700;
+  color: #000;
+}
+
+.lens-comparision-section {
+  padding: 40px 0;
+}
+
+.innovation-container {
+  text-align: center;
+  max-width: 768px;
+  margin: auto;
+}
+
+.innovation-subheading {
+  font-family: "Inter", sans-serif;
+  color: #0041c9;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.innovation-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.innovation-paragraph {
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 18px;
+  text-align: justify;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.icon-desc {
+  font-family: "Inter", sans-serif;
+  color: #444748;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.feature-icon {
+  background: #f2f2f7;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.innovation-icon-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.icon-title {
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.camera-card-title {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.camera-card-description {
+  font-family: "Inter", sans-serif;
+  color: #858383;
+  font-size: 14px;
+  font-weight: 400;
+  flex: 1;
+}
+
+.camera-card-price {
+  color: #0041c9;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.camera-details-btn {
+  background-color: #0041c9;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 14px;
+  width: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.camera-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.camera-specifications-section {
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.clear-filters-button {
+  background-color: #c90000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Space Grotesk", sans-serif;
+  transition: transform 0.3s ease-in-out;
+}
+
+.camera-card-container:hover .wish-btn{
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+}
+
+.camera-products-title{
+  font-family: "Space Grotesk", sans-serif;
+  color: #000;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+
+
+@media (min-width:481px) and (max-width:768px){
+  .camera-category-title{
+    font-size: 32px;
+  }
+
+  .camera-type-card-title, .lens-type-card-title{
+    font-size: 28px;
+  }
+
+  .camera-products-title{
+    font-size: 28px;
+  }
+
+  .innovation-title{
+    font-size: 28px;
+  } 
+
+  .innovation-paragraph{
+    padding :10px;
+  }
+}
+
+
+
+
+
+@media (min-width:320px) and (max-width:480px){
+  .camera-category-title{
+    font-size: 24px;
+  }
+
+  .camera-type-card-title, .lens-type-card-title{
+    font-size: 22px;
+  }
+
+  .camera-products-title{
+    font-size: 24px;
+  }
+
+  .innovation-title{
+    font-size: 24px;
+  }
+
+  .innovation-paragraph{
+    padding :10px;
+  }
+}

@@ -74,7 +74,6 @@ INSTALLED_APPS = [
     'cart',
     'orders',
     'wishlist',
-    'reviews',
     'payments',
     'rest_framework',
     'drf_yasg',

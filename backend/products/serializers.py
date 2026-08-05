@@ -3,7 +3,7 @@ from .models import Product,ProductImage,ProductSpecification,Category,Brand,Ban
 
 
 class CategorySerializer(serializers.ModelSerializer):
-  image = serializers.SerializerMethodField()
+  image = serializers.ImageField(read_only=True)
   class Meta:
     model = Category
     fields = ["id","name","slug","image"]
@@ -43,7 +43,6 @@ class ProductImageSerializer(serializers.ModelSerializer):
 class ProductSerializer(serializers.ModelSerializer):
   specification = ProductSpecificationSerializer(many=True,read_only=True)
   subcategory = SubCategorySerializer(read_only=True)
-  category = CategorySerializer(read_only=True)
   images = ProductImageSerializer(many=True,read_only=True)
   section = ProductSectionSerializer(many=True,read_only=True)
   available_from = serializers.DateTimeField(

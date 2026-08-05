@@ -19,9 +19,6 @@ function ProductTvCard({ product }) {
   }
 
 
-  console.log(product);
-  console.log(product.thumbnail);
-  console.log(import.meta.env.VITE_MEDIA_URL);
 
   return (
     <div className="card tv-card h-100">

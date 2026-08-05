@@ -15,7 +15,7 @@ function CartItems({ cartItem }) {
               <div className="cart-img-div">
                 <img
                   className="cart-img"
-                  src={`${import.meta.env.VITE_MEDIA_URL}${item.product.thumbnail}`}
+                  src={item.product.thumbnail}
                   alt="cart-img"
                 />
               </div>

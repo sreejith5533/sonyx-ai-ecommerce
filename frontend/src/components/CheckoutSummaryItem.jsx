@@ -2,7 +2,7 @@ function CheckoutSummaryItem({ product}) {
   return (
     <div className="checkout-product">
       <img
-        src={`${import.meta.env.VITE_MEDIA_URL} ${product.product.thumbnail}`}
+        src={product.product.thumbnail}
         alt="img"
         className="checkout-product-image"
       />

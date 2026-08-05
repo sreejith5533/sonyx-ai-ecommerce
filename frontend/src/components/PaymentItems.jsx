@@ -78,7 +78,7 @@ function PaymentItems() {
         <div className="payment-card-item" key={index}>
           <img
             className="payment-card-item-image"
-            src={`${import.meta.env.VITE_MEDIA_URL} ${item.product.thumbnail}`}
+            src={item.product.thumbnail}
             alt=""
           />
           <div className="payment-card-item-body">

@@ -9,7 +9,7 @@ function ViewProductImg({ product }) {
               key={image.id}
             >
               <img
-                src={`${import.meta.env.VITE_MEDIA_URL}${image.image}`}
+                src={image.image}
                 className="viewproduct-img"
                 alt="..."
               />

@@ -11,7 +11,7 @@ function UserProfileImage({userProfile}) {
     <div className="user-profile-image-div">
       <input ref={inputRef} type="file" className="user-profile-image-input" />
       <img
-        src={`${import.meta.env.VITE_MEDIA_URL}${userProfile}`}
+        src={userProfile}
         alt="profile-image"
         className="user-profile-image"
       />

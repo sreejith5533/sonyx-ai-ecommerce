@@ -101,7 +101,7 @@ function OrderDetails() {
               <div className="d-flex align-items-center">
 
                 <img
-                  src={`${import.meta.env.VITE_MEDIA_URL}${item.product.thumbnail}`}
+                  src={item.product.thumbnail}
                   alt={item.product.name}
                   width="90"
                 />

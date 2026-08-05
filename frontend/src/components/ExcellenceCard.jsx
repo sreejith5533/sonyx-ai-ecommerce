@@ -3,7 +3,7 @@ function ExcellenceCard({ product , index}) {
     <div className="excellence-card card">
       <div className="excellence-card-image-container">
         <img
-          src={`${import.meta.env.VITE_MEDIA_URL}${product.thumbnail}`}
+          src={product.thumbnail}
           alt={product.name}
           className="excellence-card-image"
         />

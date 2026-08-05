@@ -101,7 +101,7 @@ function OrderDetails() {
               <div className="d-flex align-items-center">
 
                 <img
-                  src={`http://127.0.0.1:8000${item.product.thumbnail}`}
+                  src={`${import.meta.env.VITE_API_URL}${item.product.thumbnail}`}
                   alt={item.product.name}
                   width="90"
                 />

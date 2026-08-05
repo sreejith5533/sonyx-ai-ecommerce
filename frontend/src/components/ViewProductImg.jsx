@@ -9,7 +9,7 @@ function ViewProductImg({ product }) {
               key={image.id}
             >
               <img
-                src={`http://127.0.0.1:8000${image.image}`}
+                src={`${import.meta.env.VITE_API_URL}${image.image}`}
                 className="viewproduct-img"
                 alt="..."
               />

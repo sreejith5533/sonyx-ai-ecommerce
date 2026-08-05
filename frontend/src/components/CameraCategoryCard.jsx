@@ -3,7 +3,7 @@ function CameraCategoryCard({ category }) {
     <div className="camera-category-card">
       <div className="camera-img-container">
         <img
-          src={`http://127.0.0.1:8000${category.image}`}
+          src={`${import.meta.env.VITE_API_URL}${category.image}`}
           alt="img"
           className="camera-category-card-image"
         />

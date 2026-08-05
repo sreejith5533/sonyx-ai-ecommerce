@@ -35,7 +35,7 @@ function OrderItem({ order }) {
             <div className="order-product-left">
               <img
                 className="order-product-image"
-                src={`http://127.0.0.1:8000${item.product.thumbnail}`}
+                src={`${import.meta.env.VITE_API_URL}${item.product.thumbnail}`}
                 alt={item.product.name}
               />
 

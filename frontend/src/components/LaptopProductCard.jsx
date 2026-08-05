@@ -21,7 +21,7 @@ function LaptopProductCard({ product }) {
           <i className={`fa-solid fa-heart wishlist-icon ${isWishlisted ? "active" : ""}`}></i>
         </button>
         <img
-          src={`http://127.0.0.1:8000${product?.thumbnail}`}
+          src={`${import.meta.env.VITE_API_URL}${product?.thumbnail}`}
           className="card-img-top laptop-card-img"
           alt="laptop-img"
         />

@@ -15,7 +15,7 @@ function CartItems({ cartItem }) {
               <div className="cart-img-div">
                 <img
                   className="cart-img"
-                  src={`http://127.0.0.1:8000${item.product.thumbnail}`}
+                  src={`${import.meta.env.VITE_API_URL}${item.product.thumbnail}`}
                   alt="cart-img"
                 />
               </div>

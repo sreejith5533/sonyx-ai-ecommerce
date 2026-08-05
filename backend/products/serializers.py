@@ -3,9 +3,15 @@ from .models import Product,ProductImage,ProductSpecification,Category,Brand,Ban
 
 
 class CategorySerializer(serializers.ModelSerializer):
+  image = serializers.SerializerMethodField()
   class Meta:
     model = Category
     fields = ["id","name","slug","image"]
+
+
+    def get_image(self, obj):
+        print(obj.image.url)  # temporary
+        return obj.image.url if obj.image else None
 
 
 

@@ -11,7 +11,7 @@ function Wishlist({ product }) {
           <i className={`fa-solid fa-heart wishlist-icon ${isWishlisted ? "active" : ""}`}></i>
         </button>
         <img
-          src={`${import.meta.env.VITE_API_URL} ${product.product.thumbnail}`}
+          src={`${import.meta.env.VITE_MEDIA_URL} ${product.product.thumbnail}`}
           alt="img-div"
           className="wishlist-img"
         />

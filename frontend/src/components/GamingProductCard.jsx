@@ -19,7 +19,7 @@ function GamingProductCard({ product }) {
       <div className="gamingcard-img-div">
         <img
           className="card-img-top gamingcard-img"
-          src={`${import.meta.env.VITE_API_URL}${product?.thumbnail}`}
+          src={`${import.meta.env.VITE_MEDIA_URL}${product?.thumbnail}`}
           alt="Card image cap"
         />
         <button className="wish-btn" onClick={() => addAndremove(product.id)}>

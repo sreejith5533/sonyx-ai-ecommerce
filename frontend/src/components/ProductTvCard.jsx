@@ -69,7 +69,7 @@ function ProductTvCard({ product }) {
         </div>
         <img
           className="card-img-top tv-card-img"
-          src={`${import.meta.env.VITE_API_URL}${product.thumbnail}`}
+          src={`${import.meta.env.VITE_MEDIA_URL}${product.thumbnail}`}
           alt="Card image cap"
         />
         <button className="wish-btn" onClick={()=>addAndremove(product.id)}>

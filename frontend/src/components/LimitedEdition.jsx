@@ -34,7 +34,7 @@ function LimitedEdition({ title, description, imageUrl }) {
                   </span>
                 )}
                 <img
-                  src={`${import.meta.env.VITE_API_URL}${product.thumbnail}`}
+                  src={`${import.meta.env.VITE_MEDIA_URL}${product.thumbnail}`}
                   alt="Limited Edition"
                   className="edition-card-image"
                 />

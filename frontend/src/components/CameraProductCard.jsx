@@ -21,7 +21,7 @@ function CameraProductCard({ product }) {
         <button className="btn camera-add-to-cart" onClick={() => addToCart(product.id)}>Add to Cart</button>
         <img
           className="camera-card-img"
-          src={`${import.meta.env.VITE_API_URL}${product.thumbnail}`}
+          src={`${import.meta.env.VITE_MEDIA_URL}${product.thumbnail}`}
           alt="img"
         />
         <button className="wish-btn" onClick={() => addAndremove(product.id)}>

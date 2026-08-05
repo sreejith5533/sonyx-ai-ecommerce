@@ -20,7 +20,7 @@ function AccessoriesProductCard({ product }) {
       <div className="accessories-img-div">
         <img
           className="accessories-product-img"
-          src={`${import.meta.env.VITE_API_URL}${product?.thumbnail}`}
+          src={`${import.meta.env.VITE_MEDIA_URL}${product?.thumbnail}`}
           alt="accessories-img"
         />
         <button className="wish-btn" onClick={() => addAndremove(product.id)}>

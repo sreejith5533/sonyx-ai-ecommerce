@@ -19,7 +19,7 @@ function AudioProductCard({ product }) {
     <div className="card audio-card">
       <div className="audio-card-div">
         <img
-          src={`${import.meta.env.VITE_API_URL}${product.thumbnail}`}
+          src={`${import.meta.env.VITE_MEDIA_URL}${product.thumbnail}`}
           className="audio-card-img card-img-top"
           alt="img"
         />

@@ -18,6 +18,11 @@ function ProductTvCard({ product }) {
     navigate(`/viewproduct/${id}`);
   }
 
+
+  console.log(product);
+  console.log(product.thumbnail);
+  console.log(import.meta.env.VITE_MEDIA_URL);
+
   return (
     <div className="card tv-card h-100">
       <div className="card-img-div television-img-div">
@@ -67,6 +72,7 @@ function ProductTvCard({ product }) {
             <p className="refresh-rate-name">Refresh Rate</p>
           </div>
         </div>
+        
         <img
           className="card-img-top tv-card-img"
           src={`${import.meta.env.VITE_MEDIA_URL}${product.thumbnail}`}

@@ -9,9 +9,6 @@ class CategorySerializer(serializers.ModelSerializer):
     fields = ["id","name","slug","image"]
 
 
-    def get_image(self, obj):
-        print(obj.image.url)  # temporary
-        return obj.image.url if obj.image else None
 
 
 

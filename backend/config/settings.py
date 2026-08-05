@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 from pathlib import Path
 from datetime import timedelta
 from decouple import config
-
+import cloudinary
 
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
@@ -64,6 +64,8 @@ CSRF_TRUSTED_ORIGINS = config(
 
 
 
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -73,6 +75,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'rest_framework_simplejwt.token_blacklist',
+    'cloudinary_storage',
     'django.contrib.staticfiles',
     'account',
     'products',
@@ -86,7 +89,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'django_filters',
     'chatbot',
-
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -120,6 +123,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
+
+
+cloudinary.config(
+    cloud_name=config("CLOUDINARY_CLOUD_NAME"),
+    api_key=config("CLOUDINARY_API_KEY"),
+    api_secret=config("CLOUDINARY_API_SECRET"),
+    secure=True,
+)
+
+DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
@@ -205,5 +218,5 @@ STATICFILES_STORAGE = (
     "whitenoise.storage.CompressedManifestStaticFilesStorage"
 )
 
-MEDIA_URL = '/media/'
+
 MEDIA_ROOT = BASE_DIR / 'media'

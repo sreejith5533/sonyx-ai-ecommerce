@@ -85,6 +85,7 @@ INSTALLED_APPS = [
     'payments',
     'rest_framework',
     'drf_yasg',
+    'storages',
     'rest_framework_simplejwt',
     'corsheaders',
     'django_filters',
@@ -125,14 +126,17 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 
 
+
 STORAGES = {
     "default": {
-        "BACKEND": "django.core.files.storage.FileSystemStorage",
+        "BACKEND": "config.storage_backends.MediaStorage",
     },
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+
+
 
 
 
@@ -178,6 +182,28 @@ DATABASES = {
     }
 }
 
+SUPABASE_URL=config('SUPABASE_URL')
+
+SUPABASE_SECRET_KEY=config('SUPABASE_SECRET_KEY')
+
+AWS_STORAGE_BUCKET_NAME=config('AWS_STORAGE_BUCKET_NAME')
+
+AWS_ACCESS_KEY_ID=config('AWS_ACCESS_KEY_ID')
+
+AWS_SECRET_ACCESS_KEY=config('AWS_SECRET_ACCESS_KEY')
+
+AWS_S3_ENDPOINT_URL=config('AWS_S3_ENDPOINT_URL')
+
+AWS_S3_REGION_NAME=config('AWS_S3_REGION_NAME')
+
+
+
+AWS_QUERYSTRING_AUTH = False
+AWS_DEFAULT_ACL = None
+AWS_S3_FILE_OVERWRITE = False
+
+
+
 
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
@@ -221,4 +247,3 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
 MEDIA_URL = "/media/"
-MEDIA_ROOT = BASE_DIR / "media"

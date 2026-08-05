@@ -30,6 +30,8 @@ function LoginForm() {
       navigate("/");
     } catch (error) {
       console.error(error);
+      console.log(error.response.data);
+      console.log(error.response.status);
     }
   };
 

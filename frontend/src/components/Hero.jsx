@@ -6,7 +6,7 @@ function Hero({banners=[]}){
 
   return(
     <div className="hero-container">
-      <video className="hero-video" autoPlay loop muted playsInline poster={banners[0].poster} >
+      <video className="hero-video" preload="auto" autoPlay loop muted playsInline poster={banners[0].poster} >
       
         <source src={banners[0].video} type="video/mp4" />
       </video>

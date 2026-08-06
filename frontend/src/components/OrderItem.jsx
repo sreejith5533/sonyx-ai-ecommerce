@@ -37,6 +37,7 @@ function OrderItem({ order }) {
                 className="order-product-image"
                 src={item.product.thumbnail}
                 alt={item.product.name}
+                loading="lazy"
               />
 
               <div className="order-product-info">

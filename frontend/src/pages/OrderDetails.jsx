@@ -103,6 +103,7 @@ function OrderDetails() {
                 <img
                   src={item.product.thumbnail}
                   alt={item.product.name}
+                  loading="lazy"
                   width="90"
                 />
 

@@ -21,6 +21,7 @@ function GamingProductCard({ product }) {
           className="card-img-top gamingcard-img"
           src={product?.thumbnail}
           alt="Card image cap"
+          loading="lazy"
         />
         <button className="wish-btn" onClick={() => addAndremove(product.id)}>
           <i className={`fa-solid fa-heart wishlist-icon ${isWishlisted ? "active" : ""}`}></i>

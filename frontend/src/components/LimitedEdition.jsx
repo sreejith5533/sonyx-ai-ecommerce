@@ -36,6 +36,7 @@ function LimitedEdition({ title, description, imageUrl }) {
                 <img
                   src={product.thumbnail}
                   alt="Limited Edition"
+                  loading="lazy"
                   className="edition-card-image"
                 />
               </div>

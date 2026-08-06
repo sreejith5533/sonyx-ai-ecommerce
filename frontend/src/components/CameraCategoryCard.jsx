@@ -6,6 +6,7 @@ function CameraCategoryCard({ category }) {
           src={category.image}
           alt="img"
           className="camera-category-card-image"
+          loading="lazy"
         />
       </div>
       <div className="camera-category-card-body card-body mt-3">

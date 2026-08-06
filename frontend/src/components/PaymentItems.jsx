@@ -79,7 +79,8 @@ function PaymentItems() {
           <img
             className="payment-card-item-image"
             src={item.product.thumbnail}
-            alt=""
+            loading="lazy"
+            alt="img"
           />
           <div className="payment-card-item-body">
             <p className="payment-card-item-title">{item.product.name}</p>

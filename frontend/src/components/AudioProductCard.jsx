@@ -22,6 +22,7 @@ function AudioProductCard({ product }) {
           src={product.thumbnail}
           className="audio-card-img card-img-top"
           alt="img"
+          loading="lazy"
         />
         <button className="wish-btn" onClick={() => addAndremove(product.id)}>
           <i className={`fa-solid fa-heart wishlist-icon ${isWishlisted ? "active" : ""}`}></i>

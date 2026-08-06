@@ -5,6 +5,7 @@ function CheckoutSummaryItem({ product}) {
         src={product.product.thumbnail}
         alt="img"
         className="checkout-product-image"
+        loading="lazy"
       />
 
       <div className="checkout-product-details">

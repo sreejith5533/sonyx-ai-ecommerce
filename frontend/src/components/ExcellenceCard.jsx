@@ -6,6 +6,7 @@ function ExcellenceCard({ product , index}) {
           src={product.thumbnail}
           alt={product.name}
           className="excellence-card-image"
+          loading="lazy"
         />
       </div>
       <div className="excellence-card-body card-body">

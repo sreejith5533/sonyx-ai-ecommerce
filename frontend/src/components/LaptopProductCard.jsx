@@ -24,6 +24,7 @@ function LaptopProductCard({ product }) {
           src={product?.thumbnail}
           className="card-img-top laptop-card-img"
           alt="laptop-img"
+          loading="lazy"
         />
       </div>
       <div className="card-body laptop-card-body">

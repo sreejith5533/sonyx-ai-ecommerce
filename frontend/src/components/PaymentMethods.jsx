@@ -9,6 +9,7 @@ function PaymentMethods() {
           <img
             src="https://img.icons8.com/?size=100&id=57arHgK3Izco&format=png&color=000000"
             alt="Mastercard"
+            loading="lazy"
           />
           <div className="payment-method-card-body">
             <p className="payment-method-card-title">CREDIT / DEBIT CARD</p>
@@ -19,6 +20,7 @@ function PaymentMethods() {
           <img
             src="https://img.icons8.com/?size=100&id=117268&format=png&color=000000"
             alt="Mastercard"
+            loading="lazy"
           />
           <div className="payment-method-card-body">
             <p className="payment-method-card-title">UPI / QR CODE</p>
@@ -29,6 +31,7 @@ function PaymentMethods() {
           <img
             src="https://img.icons8.com/?size=100&id=ynRo4ryFLrim&format=png&color=000000"
             alt="PayPal"
+            loading="lazy"
           />
           <div className="payment-method-card-body">
             <p className="payment-method-card-title">NETBANKING</p>

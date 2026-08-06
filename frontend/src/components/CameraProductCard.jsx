@@ -23,6 +23,7 @@ function CameraProductCard({ product }) {
           className="camera-card-img"
           src={product.thumbnail}
           alt="img"
+          loading="lazy"
         />
         <button className="wish-btn" onClick={() => addAndremove(product.id)}>
           <i className={`fa-solid fa-heart wishlist-icon ${isWishlisted ? "active" : ""}`}></i>

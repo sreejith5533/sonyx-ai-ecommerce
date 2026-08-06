@@ -13,6 +13,7 @@ function UserProfileImage({userProfile}) {
       <img
         src={userProfile}
         alt="profile-image"
+        loading="lazy"
         className="user-profile-image"
       />
     </div>

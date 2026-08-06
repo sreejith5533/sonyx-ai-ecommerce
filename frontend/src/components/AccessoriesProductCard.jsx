@@ -20,7 +20,7 @@ function AccessoriesProductCard({ product }) {
       <div className="accessories-img-div">
         <img
           className="accessories-product-img"
-          src={product?.thumbnail}
+          src={product?.thumbnail} loading="lazy"
           alt="accessories-img"
         />
         <button className="wish-btn" onClick={() => addAndremove(product.id)}>

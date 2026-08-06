@@ -17,6 +17,7 @@ function CartItems({ cartItem }) {
                   className="cart-img"
                   src={item.product.thumbnail}
                   alt="cart-img"
+                  loading="lazy"
                 />
               </div>
             </div>

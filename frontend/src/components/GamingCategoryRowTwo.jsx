@@ -6,6 +6,7 @@ function GamingCategoryRowTwo({ largecard, smallcard }) {
           <img
             src={largecard?.image}
             className="gaming-category-image"
+            loading="lazy"
           />
           <div className="monitor-div">
             <h4 className="monitor-title">{largecard?.name}</h4>
@@ -19,6 +20,7 @@ function GamingCategoryRowTwo({ largecard, smallcard }) {
           <img
             src={smallcard?.image}
             className="gaming-category-image"
+            loading="lazy"
           />
           <div className="consoles-div">
             <h4 className="consoles-title">{smallcard?.name}</h4>

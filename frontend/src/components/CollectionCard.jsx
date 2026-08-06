@@ -5,6 +5,7 @@ function CollectionCard({ category }) {
       <img
         src={category.image}
         alt="img"
+        loading="lazy"
       />
       <Link className="collection-img-text" to={`/${category.slug}`}>{category.name}</Link>
     </div>

@@ -5,7 +5,7 @@ function NewProduct({product}){
         <i className="fa-regular fa-heart"></i>
       </button>
       <div className="card-img-top new-product-img-div">
-        <img className="new-product-img" src={product.thumbnail} alt="img" />
+        <img className="new-product-img" src={product.thumbnail} alt="img" loading="lazy" />
       </div>
       <div className="card-body">
         <h5 className="card-title new-product-title">{product.subcategory.category.name}</h5>

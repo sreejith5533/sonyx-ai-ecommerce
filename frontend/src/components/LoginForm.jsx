@@ -5,7 +5,7 @@ import API from "../services/axios";
 function LoginForm() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
-    email: "",
+    username: "",
     password: "",
   });
 
@@ -29,9 +29,10 @@ function LoginForm() {
       console.log(response.data);
       navigate("/");
     } catch (error) {
-      console.error(error);
-      console.log(error.response.data);
-      console.log(error.response.status);
+      console.log("URL:", error.config?.url);
+      console.log("METHOD:", error.config?.method);
+      console.log("STATUS:", error.response?.status);
+      console.log("DATA:", error.response?.data);
     }
   };
 
@@ -40,16 +41,16 @@ function LoginForm() {
       <h2 className="login-form-title">Login</h2>
       <form className="login-form" onSubmit={handleSubmit}>
         <div className="form-group mb-3">
-          <label className="form-label" htmlFor="email">
-            Email:
+          <label className="form-label" htmlFor="username">
+            Username:
           </label>
           <input
             className="form-control"
-            type="email"
-            id="email"
-            name="email"
+            type="text"
+            id="username"
+            name="username"
             onChange={handleChange}
-            value={formData.email}
+            value={formData.username}
             required
           />
         </div>

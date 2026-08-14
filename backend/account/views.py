@@ -2,17 +2,17 @@ from django.shortcuts import render, get_object_or_404
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from wishlist.models import Wishlist,WishlistItem
+from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth.models import User
 from .serializers import (
     SignupSerializer,
-    LoginSerializer,
     AddAddressSerializer,
     AddressesSerializer,
     EditAddressSerializer,
     ChangePasswordSerializer,
     UserProfileSerializer,
 )
-from rest_framework_simplejwt.tokens import RefreshToken
+
 from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import UserProfile, Address
 from orders.models import Order
@@ -32,30 +32,6 @@ def singup_view(request):
     return Response(serializer.errors, status=400)
 
 
-@api_view(["POST"])
-@permission_classes([AllowAny])
-def login_view(request):
-    serializer = LoginSerializer(data=request.data)
-
-    if serializer.is_valid():
-
-        user = serializer.validated_data["user"]
-        refresh = RefreshToken.for_user(user)
-        access = refresh.access_token
-
-        return Response(
-            {
-                "user": {
-                    "id": user.id,
-                    "username": user.username,
-                    "email": user.email,
-                },
-                "access": str(access),
-                "refresh": str(refresh),
-            }
-        )
-    
-    return Response(serializer.errors, status=400)
 
 
 

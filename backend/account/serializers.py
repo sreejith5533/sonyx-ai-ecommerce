@@ -39,25 +39,6 @@ class SignupSerializer(serializers.ModelSerializer):
         return user
 
 
-class LoginSerializer(serializers.Serializer):
-    email = serializers.EmailField()
-    password = serializers.CharField(write_only=True)
-
-    def validate(self, data):
-        user = User.objects.filter(email=data["email"]).first()
-
-        if user is None:
-            raise serializers.ValidationError("User does not exist")
-
-        authenticate_user = authenticate(
-            username=user.username, password=data["password"]
-        )
-
-        if authenticate_user is None:
-            raise serializers.ValidationError({"message": "User does not exist"})
-
-        data["user"] = user
-        return data
 
 
 class AddAddressSerializer(serializers.ModelSerializer):

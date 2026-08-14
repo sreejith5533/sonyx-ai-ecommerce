@@ -16,10 +16,10 @@ function UserRightsAccordion() {
         </h2>
         <div
           id="collapseOne"
-          className="accordion-collapse collapse show"
+          className="accordion-collapse collapse"
           data-bs-parent="#accordionExample"
         >
-          <div class="accordion-body">
+          <div className="accordion-body">
             <p>
               You hold the right to request a complete technical dump of all
               data points associated with your unique UDID. Requests are

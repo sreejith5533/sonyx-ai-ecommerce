@@ -16,7 +16,7 @@ function UserRightsAccordion() {
         </h2>
         <div
           id="collapseOne"
-          className="accordion-collapse collapse"
+          className="accordion-collapse collapse show"
           data-bs-parent="#accordionExample"
         >
           <div className="accordion-body">
